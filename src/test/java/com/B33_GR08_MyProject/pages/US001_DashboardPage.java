@@ -16,6 +16,9 @@ public class US001_DashboardPage extends BasePage{
     }
     @FindBy(xpath = "(//a/span[@class='title title-level-1'])[1]")
     public WebElement firstMenuOption;
+
+    @FindBy(xpath = "//a[@href='http://www.oroinc.com/doc']")
+    public WebElement questionMarkIcon;
     public List<String> actualMainModules(){
         List<String> actualMainModules = new ArrayList<>();
         BrowserUtils.waitForVisibility(firstMenuOption,120);
