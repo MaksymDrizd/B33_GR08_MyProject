@@ -19,6 +19,9 @@ public class US001_DashboardPage extends BasePage{
 
     @FindBy(xpath = "//a[@href='http://www.oroinc.com/doc']")
     public WebElement questionMarkIcon;
+
+    @FindBy(linkText = "Learn how to use this space")
+    public WebElement learnHowToUseThisSpace;
     public List<String> actualMainModules(){
         List<String> actualMainModules = new ArrayList<>();
         BrowserUtils.waitForVisibility(firstMenuOption,120);

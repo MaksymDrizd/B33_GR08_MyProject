@@ -7,7 +7,7 @@ Feature: Default
 
 
 	@B33G8-146
-	Scenario Outline: US2ZC01 Verify  that user, should access to the Oroinc Documentation page.
+	Scenario Outline: US2AC01 Verify  that user, should access to the Oroinc Documentation page.
 		Given the user logged in as "<userType>"
 				Then user click on the question mark icon
 				And user should access to the Oroinc Documentation page
